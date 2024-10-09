@@ -3,6 +3,7 @@ import { FiDownload } from "react-icons/fi";
 import Social from "@/components/Social";
 import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
+import Link from "next/link";
 
 const Home = () => {
   return (
@@ -21,14 +22,16 @@ const Home = () => {
             </p>
 
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Button
-                variant="outline"
-                size="lg"
-                className="uppercase flex items-center gap-2 "
+              <Link
+              href={"https://drive.google.com/drive/u/1/folders/1cwBFLDYKVIM6Y5yczbRJIdk4I2KReTOk"}
+                // variant="outline"
+                // size="lg"
+                className="uppercase flex items-center gap-2 w-full h-9 border border-blue-700 rounded-full  justify-center text-blue-700 text-base hover:bg-blue-700 hover:text-white hover:transition-all duration-500"
+                
               >
-                <span>Download Cv</span>
+                <div>Download Cv</div>
                 <FiDownload className="text-xl " />
-              </Button>
+              </Link>
 
               <div className="mb-8 xl:mb-0">
                 <Social

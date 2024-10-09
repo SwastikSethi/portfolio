@@ -1,11 +1,12 @@
 import Link from "next/link";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 import { FC } from "react";
 
 const socials = [
-  { icon: <FaGithub />, path: "" },
-  { icon: <FaLinkedin />, path: "" },
-  { icon: <FaGithub />, path: "" },
+  { icon: <FaGithub />, path: "https://github.com/SwastikSethi" },
+  { icon: <FaLinkedin />, path: "https://www.linkedin.com/in/swastiksethi/" },
+  { icon: <SiLeetcode  />, path: "https://leetcode.com/u/swastiksethi7/" },
 ];
 
 interface SocialProps {
