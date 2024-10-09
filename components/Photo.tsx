@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Photo = () => {
   return (
-    <div className="w-full h-full relative ">
+    <div className="w-full h-full relative">
       {/* photo */}
       <motion.div
         initial={{ opacity: 0 }}
@@ -17,8 +17,6 @@ const Photo = () => {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{
-            // x: 100,
-            // y: 100,
             opacity: 1,
             transition: {
               delay: 2.5,
@@ -28,25 +26,24 @@ const Photo = () => {
               stiffness: 100,
             },
           }}
-          className="w-[300px] h-[300px] xl:w-[440px] xl:h-[440px] mix-blend-hard-light absolute  "
+          className="relative mx-auto w-[300px] h-[300px] xl:w-[440px] xl:h-[440px] max-w-full max-h-full mix-blend-hard-light"
         >
           <Image
-            src="/assets/Swastik.png"
+            src="/assets/Swastik2.png"
             priority
             quality={100}
             fill
-            alt=""
+            alt="Image description"
             className="object-contain"
           />
         </motion.div>
       </motion.div>
 
       {/* circles */}
-
       <motion.svg
-        className="size-[302px] xl:size-[446px] "
+        className="size-[302px] xl:size-[446px] absolute top-0 left-0"
         fill="transparent"
-        viewBox="0 0 446 446 "
+        viewBox="0 0 446 446"
         xmlns="http://www.w3.org/2000/svg"
       >
         <motion.circle
